@@ -1,0 +1,43 @@
+@use '../utils/' as *;
+.ts-btn {
+    background: var(--theme-color-2);
+    padding: 10px 45px;
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--font-heading);
+    border-radius: 5px;
+    display: inline-block;
+
+    &-lg {
+        background: var(--theme-color-2);
+        padding: 16px 45px;
+        font-size: 18px;
+        color: var(--heading-color);
+        font-family: var(--font-heading);
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    &-orange {
+        background: var(--theme-orange);
+        padding: 16px 45px;
+        font-size: 18px;
+        font-family: var(--font-heading);
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    &-service {
+        background: var(--rom-color);
+        display: block;
+        padding: 6px 28px;
+        font-size: 18px;
+        font-family: var(--font-heading);
+        @include ts-transition();
+        
+    }
+
+}
