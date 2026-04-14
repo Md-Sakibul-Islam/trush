@@ -34,15 +34,16 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
-  --tp-theme-color: #0057FC;
-  --tp-primary-color: #0057FC;
+  --ts-theme-color: #424BD0;
+  --ts-black-color: #282943;
+  --ts-orange-color: #FF7C54;
+  --ts-white-color:#FFFFFF;
 }
 
 :root {
-  --ts-heading-font: "Fraunces", serif;
-  --ts-text-font: "Inter", sans-serif;
+  --ts-global-font: "Plus Jakarta Sans", sans-serif;
   --ts-icon-font:"Font Awesome 5 Pro";
 }
 
@@ -100,12 +101,12 @@ img {
   position: absolute;
 }
 
-.theme-blue-bg {
-  background: var(--blue-color);
+.ts-bg-blue {
+  background: var(--ts-theme-color);
 }
 
-.theme-black-bg {
-  background: var(--black-color);
+.ts-bg-black {
+  background: var(--ts-black-color);
 }
 
 .mt-5 {
@@ -170,6 +171,38 @@ img {
 
 .pl-10 {
   padding-left: 10px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pr-12 {
+  padding-right: 12px;
+}
+
+.pl-12 {
+  padding-left: 12px;
 }
 
 .mt-15 {
@@ -458,6 +491,70 @@ img {
 
 .pl-55 {
   padding-left: 55px;
+}
+
+.mt-57 {
+  margin-top: 57px;
+}
+
+.mb-57 {
+  margin-bottom: 57px;
+}
+
+.mr-57 {
+  margin-right: 57px;
+}
+
+.ml-57 {
+  margin-left: 57px;
+}
+
+.pt-57 {
+  padding-top: 57px;
+}
+
+.pb-57 {
+  padding-bottom: 57px;
+}
+
+.pr-57 {
+  padding-right: 57px;
+}
+
+.pl-57 {
+  padding-left: 57px;
+}
+
+.mt-58 {
+  margin-top: 58px;
+}
+
+.mb-58 {
+  margin-bottom: 58px;
+}
+
+.mr-58 {
+  margin-right: 58px;
+}
+
+.ml-58 {
+  margin-left: 58px;
+}
+
+.pt-58 {
+  padding-top: 58px;
+}
+
+.pb-58 {
+  padding-bottom: 58px;
+}
+
+.pr-58 {
+  padding-right: 58px;
+}
+
+.pl-58 {
+  padding-left: 58px;
 }
 
 .mt-60 {
@@ -902,9 +999,10 @@ img {
 	typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--ts-text-font);
-  font-size: 17px;
-  font-weight: normal;
+  font-family: var(--ts-global-font);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ts-black-color);
   line-height: 28px;
 }
 
@@ -918,19 +1016,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--ts-heading-font);
+  font-family: var(--ts-global-font);
+  color: var(--ts-black-color);
   margin: 0;
   padding: 0;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.12;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 42px;
 }
 
 h3 {
@@ -942,23 +1041,25 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 ul,
 ol {
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
 p {
-  font-family: var(--ts-text-font);
-  font-size: 17px;
+  font-family: var(--ts-global-font);
+  font-size: 18px;
   font-weight: 400;
+  color: var(--ts-black-color);
   margin: 0;
   padding: 0;
   line-height: 28px;
@@ -1123,6 +1224,32 @@ textarea {
   font-size: 15px;
   opacity: 1;
   font-weight: 500;
+}
+
+.ts-header {
+  border-bottom: 1px solid rgba(40, 41, 67, 0.2);
+}
+.ts-header__menu nav ul li {
+  display: inline-block;
+  margin: 0 23px;
+}
+.ts-header__menu nav ul li a {
+  display: inline-block;
+  padding: 36px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ts-header__menu nav ul li a i {
+  font-size: 13px;
+  font-weight: 900;
+  margin-left: 2px;
+}
+.ts-header__search {
+  padding: 36px 50px 36px 0;
+}
+.ts-header__bar {
+  border-left: 1px solid rgba(40, 41, 67, 0.2);
+  padding: 36px 0 36px 50px;
 }
 
 .ts-btn {

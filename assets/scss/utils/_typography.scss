@@ -1,8 +1,8 @@
-$font-url : 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
+$font-url :'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap';
 
 :root {
-    --ts-heading-font: "Fraunces", serif;
-    --ts-text-font: "Inter", sans-serif;
+    // --ts-heading-font: "Fraunces", serif;
+    --ts-global-font: "Plus Jakarta Sans", sans-serif;
     --ts-icon-font:"Font Awesome 5 Pro";
 }
 

@@ -1,1 +1,5 @@
+vs code bash
 sass --watch "assets/scss/style.scss:assets/css/style.css"
+
+cmd 
+sass --watch "D:\ThemeStdio\Trush\assets\scss\style.scss:D:\ThemeStdio\Trush\assets\css\style.css"
