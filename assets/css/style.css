@@ -1230,6 +1230,7 @@ textarea {
   border-bottom: 1px solid rgba(40, 41, 67, 0.2);
 }
 .ts-header__menu nav ul li {
+  position: relative;
   display: inline-block;
   margin: 0 23px;
 }
@@ -1238,11 +1239,44 @@ textarea {
   padding: 36px 0;
   font-size: 16px;
   font-weight: 500;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .ts-header__menu nav ul li a i {
   font-size: 13px;
   font-weight: 900;
   margin-left: 2px;
+}
+.ts-header__menu nav ul li .submenu {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background: #eeecec;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ts-header__menu nav ul li .submenu li {
+  display: block;
+  margin: 0 0;
+}
+.ts-header__menu nav ul li .submenu li a {
+  display: block;
+  padding: 4px 16px;
+}
+.ts-header__menu nav ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 101%;
+}
+.ts-header__menu nav ul li:hover > a {
+  color: var(--ts-theme-color);
 }
 .ts-header__search {
   padding: 36px 50px 36px 0;
