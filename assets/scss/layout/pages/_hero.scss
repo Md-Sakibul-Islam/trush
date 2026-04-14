@@ -1,0 +1,49 @@
+@use '../../utils/' as *;
+
+.ts-hero {
+
+    &__video {
+        &-text {
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    }
+
+    &__users {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__rating {
+
+        &-star {
+            i {
+                color: #ff7c54;
+            }
+        }
+
+        &-review {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: inherit;
+
+            i {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__shape {
+        top: 50px;
+        right: -15%;
+
+        img {
+            filter: drop-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.1));
+        }
+    }
+
+
+}
