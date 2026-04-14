@@ -40,6 +40,7 @@
   --ts-black-color: #282943;
   --ts-orange-color: #FF7C54;
   --ts-white-color:#FFFFFF;
+  --ts-light-blue-color:#F9F9FF;
 }
 
 :root {
@@ -107,6 +108,10 @@ img {
 
 .ts-bg-black {
   background: var(--ts-black-color);
+}
+
+.ts-bg-light-blue {
+  background: var(--ts-light-blue-color);
 }
 
 .mt-5 {
@@ -205,6 +210,38 @@ img {
   padding-left: 12px;
 }
 
+.mt-13 {
+  margin-top: 13px;
+}
+
+.mb-13 {
+  margin-bottom: 13px;
+}
+
+.mr-13 {
+  margin-right: 13px;
+}
+
+.ml-13 {
+  margin-left: 13px;
+}
+
+.pt-13 {
+  padding-top: 13px;
+}
+
+.pb-13 {
+  padding-bottom: 13px;
+}
+
+.pr-13 {
+  padding-right: 13px;
+}
+
+.pl-13 {
+  padding-left: 13px;
+}
+
 .mt-15 {
   margin-top: 15px;
 }
@@ -235,6 +272,70 @@ img {
 
 .pl-15 {
   padding-left: 15px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.mt-17 {
+  margin-top: 17px;
+}
+
+.mb-17 {
+  margin-bottom: 17px;
+}
+
+.mr-17 {
+  margin-right: 17px;
+}
+
+.ml-17 {
+  margin-left: 17px;
+}
+
+.pt-17 {
+  padding-top: 17px;
+}
+
+.pb-17 {
+  padding-bottom: 17px;
+}
+
+.pr-17 {
+  padding-right: 17px;
+}
+
+.pl-17 {
+  padding-left: 17px;
 }
 
 .mt-18 {
@@ -1303,6 +1404,7 @@ textarea {
   padding: 36px 0;
   font-size: 16px;
   font-weight: 500;
+  color: var(--ts-black-color);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1316,6 +1418,7 @@ textarea {
   position: absolute;
   top: 105%;
   left: 0;
+  z-index: 1111111;
   width: 200px;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -1378,6 +1481,27 @@ textarea {
 }
 .ts-hero__shape img {
   filter: drop-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.1));
+}
+
+.ts-solution__item {
+  padding: 60px 0;
+  border-radius: 10px;
+}
+.ts-solution__item--blue {
+  background: var(--ts-theme-color);
+}
+.ts-solution__image {
+  flex-shrink: 0;
+}
+.ts-solution__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--ts-white-color);
+}
+.ts-solution__description {
+  font-size: 16px;
+  color: var(--ts-white-color);
+  line-height: 24px;
 }
 
 .ts-btn {

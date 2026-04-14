@@ -1,0 +1,29 @@
+@use '../../utils/' as *;
+
+.ts-solution {
+
+    &__item {
+        padding: 60px 0;
+        border-radius: 10px;
+
+        &--blue {
+            background: var(--ts-theme-color);
+        }
+    }
+
+    &__image {
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--ts-white-color);
+    }
+
+    &__description {
+        font-size: 16px;
+        color: var(--ts-white-color);
+        line-height: 24px;
+    }
+}
