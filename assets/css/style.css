@@ -131,6 +131,16 @@ img {
   background: var(--ts-titan-color);
 }
 
+.ts-slide-transition {
+  transition-timing-function: linear !important;
+  -webkit-transition-timing-function: linear !important;
+}
+
+.ts-brand-slide {
+  width: auto;
+  display: inline-block;
+}
+
 .mt-5 {
   margin-top: 5px;
 }

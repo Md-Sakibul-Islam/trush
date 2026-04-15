@@ -71,3 +71,13 @@ img{
 .ts-bg-titan{
 	background: var(--ts-titan-color);
 }
+
+// infinity slider class 
+.ts-slide-transition{   //this class need to add swiper-wrapper html div
+	transition-timing-function: linear !important;
+	-webkit-transition-timing-function: linear !important;
+}
+.ts-brand-slide{ // this class need to add swiper-slide html div
+	width: auto;
+	display: inline-block;
+}

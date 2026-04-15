@@ -16,6 +16,7 @@
         $(this).css("background-color", $(this).attr("data-bg-color"));
     });
 
+
     // services slider 
       var swiper = new Swiper(".ts-services-active", {
       slidesPerView: 3,
@@ -25,10 +26,17 @@
         clickable: true,
       },
     });
+    
 
-
-
-
+    // Client slider 
+      var swiper = new Swiper(".ts-client-active", {
+      slidesPerView: 6,
+      spaceBetween: 80,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
 
 
