@@ -1796,7 +1796,7 @@ textarea {
 .ts-services__item {
   padding: 40px 36px;
   border-radius: 10px;
-  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
 }
 .ts-services__item-link {
   font-weight: 600;
@@ -1819,6 +1819,31 @@ textarea {
 .swiper-pagination-bullet-active {
   background: var(--ts-theme-color);
   border: transparent;
+}
+
+.ts-choose__icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: var(--ts-titan-color);
+  border-radius: 50%;
+}
+.ts-choose__feature-description {
+  font-size: 17px;
+}
+.ts-choose__image::after {
+  content: "";
+  position: absolute;
+  width: 92%;
+  height: 100%;
+  bottom: -50px;
+  right: 0;
+  background: var(--ts-titan-color);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .ts-btn {

@@ -1,0 +1,34 @@
+@use '../../utils/' as *;
+
+.ts-choose {
+    &__icon {
+        flex-shrink: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background: var(--ts-titan-color);
+        border-radius: 50%;
+    }
+
+    &__feature {
+        &-description {
+            font-size: 17px;
+        }
+    }
+
+    &__image {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 92%;
+            height: 100%;
+            bottom: -50px;
+            right: -0;
+            background: var(--ts-titan-color);
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+}
