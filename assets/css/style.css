@@ -1315,6 +1315,38 @@ img {
   padding-left: 140px;
 }
 
+.mt-180 {
+  margin-top: 180px;
+}
+
+.mb-180 {
+  margin-bottom: 180px;
+}
+
+.mr-180 {
+  margin-right: 180px;
+}
+
+.ml-180 {
+  margin-left: 180px;
+}
+
+.pt-180 {
+  padding-top: 180px;
+}
+
+.pb-180 {
+  padding-bottom: 180px;
+}
+
+.pr-180 {
+  padding-right: 180px;
+}
+
+.pl-180 {
+  padding-left: 180px;
+}
+
 .mt-250 {
   margin-top: 250px;
 }
@@ -1758,6 +1790,37 @@ textarea {
   border-radius: 50%;
   margin-right: 15px;
 }
+.ts-services__swiper {
+  padding: 10px;
+}
+.ts-services__item {
+  padding: 40px 36px;
+  border-radius: 10px;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.ts-services__item-link {
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid;
+}
+.ts-services__item-link i {
+  transform: rotate(-45deg);
+  margin-left: 5px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #282943;
+  background: transparent;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--ts-theme-color);
+  border: transparent;
+}
+
 .ts-btn {
   font-family: var(--font-family);
   display: inline-block;

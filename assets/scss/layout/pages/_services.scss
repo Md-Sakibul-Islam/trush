@@ -1,0 +1,42 @@
+@use '../../utils/' as *;
+
+.ts-services {
+    &__swiper {
+        padding: 10px;
+
+    }
+
+    &__item {
+        padding: 40px 36px;
+        border-radius: 10px;
+        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+
+        &-link {
+            font-weight: 600;
+            font-size: 18px;
+            border-bottom: 1px solid;
+
+            i {
+                transform: rotate(-45deg);
+                margin-left: 5px;
+            }
+        }
+
+    }
+}
+
+// swiper bullet controller 
+
+.swiper-pagination-bullet {
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #282943;
+    background: transparent;
+    opacity: 1;
+
+    &-active {
+        background: var(--ts-theme-color);
+        border: transparent;
+    }
+}
