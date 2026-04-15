@@ -1,0 +1,7 @@
+@use '../utils/' as *;
+
+.ts-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--ts-orange-color);
+}

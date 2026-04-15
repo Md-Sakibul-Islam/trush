@@ -1,2 +1,59 @@
 @use '../../utils/' as *;
 
+.ts-about {
+    &__image {
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 92%;
+            height: 100%;
+            bottom: -50px;
+            left: -50px;
+            background: var(--ts-titan-color);
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+
+    &__clients {
+        left: 0;
+        bottom: 50px;
+        border-radius: 0 50px 50px 0;
+        padding: 17px 51px;
+        background: var(--ts-theme-color);
+
+        &-number {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--ts-white-color);
+        }
+
+        &-text {
+            color: var(--ts-white-color);
+        }
+    }
+
+    &__content {}
+
+    ul {
+        li {
+            font-weight: 500;
+            margin-bottom: 20px;
+
+            span {
+                background: var(--ts-theme-color);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            img {}
+        }
+    }
+}
