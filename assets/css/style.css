@@ -1988,6 +1988,29 @@ textarea {
   color: var(--ts-black-color);
 }
 
+.ts-play {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ts-play--white {
+  width: 70px;
+  height: 70px;
+  background: var(--ts-white-color);
+}
+.ts-play--white i {
+  color: var(--ts-black-color);
+}
+.ts-play--black {
+  width: 60px;
+  height: 60px;
+  background: var(--ts-black-color);
+}
+.ts-play--black i {
+  color: var(--ts-white-color);
+}
+
 .ts-subtitle {
   font-weight: 500;
   font-size: 20px;

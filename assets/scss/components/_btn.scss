@@ -41,3 +41,30 @@
         }
     }
 }
+
+.ts-play {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &--white {
+        width: 70px;
+        height: 70px;
+        background: var(--ts-white-color);
+
+        i {
+            color: var(--ts-black-color);
+        }
+    }
+
+    &--black {
+        width: 60px;
+        height: 60px;
+        background: var(--ts-black-color);
+
+        i {
+            color: var(--ts-white-color);
+        }
+    }
+}
