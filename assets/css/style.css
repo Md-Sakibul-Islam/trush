@@ -1133,6 +1133,38 @@ img {
   padding-left: 90px;
 }
 
+.mt-95 {
+  margin-top: 95px;
+}
+
+.mb-95 {
+  margin-bottom: 95px;
+}
+
+.mr-95 {
+  margin-right: 95px;
+}
+
+.ml-95 {
+  margin-left: 95px;
+}
+
+.pt-95 {
+  padding-top: 95px;
+}
+
+.pb-95 {
+  padding-bottom: 95px;
+}
+
+.pr-95 {
+  padding-right: 95px;
+}
+
+.pl-95 {
+  padding-left: 95px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
@@ -1908,6 +1940,18 @@ textarea {
   background: #A4D5F0;
 }
 
+.ts-video {
+  padding: 315px 0;
+  background-position: center;
+  background-size: cover;
+}
+.ts-video__image {
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
 .ts-btn {
   font-family: var(--font-family);
   display: inline-block;
@@ -1930,6 +1974,18 @@ textarea {
 }
 .ts-btn--video i {
   color: var(--ts-white-color);
+}
+.ts-btn--video-white {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ts-white-color);
+}
+.ts-btn--video-white i {
+  color: var(--ts-black-color);
 }
 
 .ts-subtitle {

@@ -1,0 +1,15 @@
+@use '../../utils/' as *;
+
+.ts-video {
+    padding: 315px 0;
+    background-position: center;
+    background-size: cover;
+
+    &__image {
+        top: -38px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+     
+    }
+}
