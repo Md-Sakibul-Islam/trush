@@ -1,0 +1,51 @@
+@use '../../utils/' as *;
+
+
+.ts-project {
+
+    &__item {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(66, 75, 208, 0) 0%, #0033a0 100%);
+            visibility: hidden;
+            opacity: 0;
+            @include ts-transition();
+        }
+
+        &:hover {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .ts-project__category {
+                bottom: 50px;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__category {
+        bottom: 30px;
+        left: 40px;
+        z-index: 1111;
+        visibility: hidden;
+        opacity: 0;
+        @include ts-transition();
+
+        &-title {
+            color: var(--ts-white-color);
+        }
+
+        &-name {
+            color: var(--ts-white-color);
+        }
+    }
+}
