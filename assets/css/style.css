@@ -1952,6 +1952,66 @@ textarea {
   z-index: -1;
 }
 
+.ts-pricing__item {
+  border-radius: 10px;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px 36px;
+}
+.ts-pricing__item--blue {
+  background: var(--ts-theme-color);
+  color: #fff;
+  position: relative;
+}
+.ts-pricing__item--blue .ts-pricing__tag {
+  position: absolute;
+  right: 0;
+  top: 78px;
+  background: var(--ts-orange-color);
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+}
+.ts-pricing__item--blue .ts-pricing__tag span {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  padding: 6px 29px;
+}
+.ts-pricing__item--blue .ts-pricing__price {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.ts-pricing__item--blue .ts-pricing__features .ts-pricing__features-title {
+  color: #fff;
+}
+.ts-pricing__item--blue .ts-pricing__features ul li i {
+  color: #fff;
+}
+.ts-pricing__plan {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+}
+.ts-pricing__price {
+  font-weight: 700;
+  font-size: 42px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(40, 41, 67, 0.2);
+}
+.ts-pricing__month {
+  font-weight: 400;
+  font-size: 16px;
+}
+.ts-pricing__features-title {
+  margin: 25px 0;
+}
+.ts-pricing__features ul li {
+  margin-bottom: 20px;
+}
+.ts-pricing__features ul li i {
+  margin-right: 10px;
+  color: var(--ts-orange-color);
+}
+
 .ts-btn {
   font-family: var(--font-family);
   display: inline-block;
@@ -1963,28 +2023,17 @@ textarea {
   padding: 16px 36px;
   background: var(--ts-theme-color);
 }
-.ts-btn--video {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--ts-black-color);
+.ts-btn--lg {
+  padding: 11px 36px;
+  background: var(--ts-theme-color);
+  display: block;
+  text-align: center;
 }
-.ts-btn--video i {
-  color: var(--ts-white-color);
-}
-.ts-btn--video-white {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.ts-btn--white {
+  padding: 11px 36px;
   background: var(--ts-white-color);
-}
-.ts-btn--video-white i {
+  display: block;
+  text-align: center;
   color: var(--ts-black-color);
 }
 
