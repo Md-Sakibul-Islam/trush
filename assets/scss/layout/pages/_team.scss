@@ -1,1 +1,16 @@
 @use '../../utils/' as *;
+
+.ts-team {
+    &__image {
+        background: #8D83FF;
+        border-radius: 10px;
+
+        &--mint {
+            background: #ADF1C0;
+        }
+
+        &--sky {
+            background: #A4D5F0;
+        }
+    }
+}

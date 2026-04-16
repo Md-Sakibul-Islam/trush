@@ -1897,6 +1897,17 @@ textarea {
   color: var(--ts-white-color);
 }
 
+.ts-team__image {
+  background: #8D83FF;
+  border-radius: 10px;
+}
+.ts-team__image--mint {
+  background: #ADF1C0;
+}
+.ts-team__image--sky {
+  background: #A4D5F0;
+}
+
 .ts-btn {
   font-family: var(--font-family);
   display: inline-block;
