@@ -2012,6 +2012,47 @@ textarea {
   color: var(--ts-orange-color);
 }
 
+.ts-testimonial__description {
+  font-size: 24px;
+  line-height: 1.5;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(40, 41, 67, 0.2);
+}
+.ts-testimonial__author {
+  padding-top: 37px;
+}
+.ts-testimonial__author-name {
+  font-weight: 700;
+  font-size: 24px;
+}
+.ts-testimonial__author-designation {
+  font-size: 16px;
+}
+.ts-testimonial__actions {
+  right: 0;
+  bottom: 0;
+  z-index: 1111;
+}
+.ts-testimonial__next, .ts-testimonial__prev {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--ts-black-color);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ts-testimonial__next i, .ts-testimonial__prev i {
+  color: var(--ts-white-color);
+}
+.ts-testimonial__next:hover, .ts-testimonial__prev:hover {
+  background: var(--ts-theme-color);
+}
+
 .ts-btn {
   font-family: var(--font-family);
   display: inline-block;

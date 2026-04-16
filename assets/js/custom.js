@@ -59,6 +59,13 @@
     },
   });
 
+  var swiper = new Swiper(".ts-testimonial-active", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".ts-btn-next",
+      prevEl: ".ts-btn-prev",
+    },
+  });
 
 
 
